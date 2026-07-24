@@ -1,52 +1,154 @@
-body{
-    background-color:#ffffff;
+/* ===========================
+   StudentHub CSS
+=========================== */
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin:30px;
-    }
-    
-    header{
-    background:#1e80dc;
-    color:rgb(239, 238, 238);  
-    padding:20px;
-    }
-    
-    nav a{
-    color:rgb(57, 48, 48);
-    margin-right:15px;
-    text-decoration:none;
-    }
-    
-    h1{
-    color:#eaecf1;
-    }
-    
-    h2{
-        color:#1937d1;
-        }
+    background-color: #f4f6f9;
+    color: #333;
+}
 
-    table{
-    border-collapse:collapse;
-    width:60%;
-    }
-    
-    th{
-    background:#0056b3;
-    color:white;
-    padding:10px;
-    }
-    
-    td{
-    padding:10px;
-    }
+/* Header */
 
-    button{
-    padding:10px 20px;
-    background:#0056b3;
-    color:white;
-    border:none;
-    cursor:pointer;
-    }
-    
-    footer{
-    margin-top:30px;
-    }
+header {
+    background-color: #1e80dc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #0056b3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 12px;
+}
+
+nav li {
+    margin: 8px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+/* Sections */
+
+section {
+    background: white;
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #0056b3;
+}
+
+h3 {
+    color: #1e80dc;
+}
+
+/* Banner Image */
+
+.banner {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+/* Lists */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #003f87;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1e80dc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
