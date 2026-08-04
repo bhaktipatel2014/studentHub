@@ -1,154 +1,250 @@
-/* ===========================
-   StudentHub CSS
-=========================== */
+/* ================= RESET ================= */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Header */
-
-header {
-    background-color: #1e80dc;
-    color: white;
-    text-align: center;
-    padding: 20px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6f8fc;
 }
 
-header img {
-    border-radius: 50%;
+/* ================= HEADER ================= */
+
+/* ================= HEADER ================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 45px;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-header h1 {
-    margin: 10px 0 5px;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
-header p {
-    margin: 0;
+.logo img{
+    width:58px;
+    height:58px;
+    border-radius:10px;
 }
 
-/* Navigation */
-
-nav {
-    background-color: #0056b3;
+.logo h2{
+    font-size:30px;
+    color:#1565C0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 12px;
+nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
 }
 
-nav li {
-    margin: 8px 15px;
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav a:hover,
+nav a.active{
+    color:#1565C0;
 }
 
-nav a:hover {
-    color: yellow;
+.login{
+    margin-left:35px;
 }
 
-/* Main */
+.register{
+    background:#1565C0;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+}
+/* ================= HERO ================= */
 
-main {
-    width: 90%;
-    margin: auto;
+/* ================= HERO ================= */
+
+.hero{
+    width:92%;
+    margin:40px auto;
+    background:#edf4ff;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+    gap:50px;
 }
 
-/* Sections */
 
-section {
-    background: white;
-    margin: 25px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+/* Image */
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
 }
 
-h2 {
-    color: #0056b3;
+.hero-image img{
+    width:100%;
+    max-width:720px;
+    height:430px;
+    object-fit:cover;
+    border-radius:20px;
 }
 
-h3 {
-    color: #1e80dc;
+
+/* Content */
+
+.hero-content{
+    flex:1;
+    padding:20px;
 }
 
-/* Banner Image */
 
-.banner {
-    display: block;
-    margin: 25px auto;
-    width: 100%;
-    max-width: 1200px;
-    border-radius: 10px;
+.hero-tag{
+    display:inline-block;
+    background:#dceaff;
+    color:#1565C0;
+    padding:8px 18px;
+    border-radius:25px;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
-/* Lists */
 
-ul {
-    padding-left: 20px;
+.hero-content h1{
+    font-size:55px;
+    color:#173A70;
+    line-height:1.15;
+    margin-bottom:20px;
 }
 
-li {
-    margin-bottom: 10px;
+
+.hero-content p{
+    font-size:20px;
+    color:#555;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+
+/* Buttons */
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+
+.btn{
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+.btn-dark{
+    background:#1565C0;
+    color:white;
+}
+
+
+.btn-outline{
+    border:2px solid #1565C0;
+    color:#1565C0;
+}
+
+/* Content */
+
+.hero-content{
+    flex:1;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:#c3dbf8;
+    color:#1565C0;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.hero-content h1{
+    font-size:72px;
+    color:#173A70;
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:26px;
+    color:#555;
+    line-height:1.7;
+    margin-bottom:40px;
 }
 
 /* Buttons */
 
-button {
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+.hero-buttons{
+    display:flex;
+    gap:22px;
 }
 
-button:hover {
-    background-color: #003f87;
+.btn{
+    text-decoration:none;
+    padding:18px 36px;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:bold;
 }
 
-/* Tables */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
+.btn-dark{
+    background:#1565C0;
+    color:white;
 }
 
-table,
-th,
-td {
-    border: 1px solid gray;
+.btn-outline{
+    border:3px solid #1565C0;
+    color:#1565C0;
 }
 
-th {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px;
+/* ================= Responsive ================= */
+
+@media(max-width:1100px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
 }
 
-td {
-    padding: 10px;
+.hero-buttons{
+    justify-content:center;
 }
 
-/* Footer */
+nav{
+    gap:18px;
+}
 
-footer {
-    background-color: #1e80dc;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+.hero-content h1{
+    font-size:52px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
 }

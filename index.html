@@ -1,118 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Home</title>
+    <title>StudentHub | Home</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<center>
+<!-- ================= HEADER ================= -->
 <header>
-    <img src="images/logo.jpg" alt="StudentHub Logo" width="90">
-    <h1>StudentHub</h1>
-    <p>Your Digital Campus Portal</p>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="StudentHub Logo">
+        <h2>StudentHub</h2>
+    </div>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="assignment.html">Assignment</a>
+        <a href="notice.html">Notice</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="login">Login</a>
+        <a href="register.html" class="register">Register</a>
+    </nav>
 </header>
-</center>
-<hr>
+    </nav>
+</header>
+<!-- ================= HERO ================= -->
+<!-- ================= HERO ================= -->
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="attendance.html">Attendance</a></li>
-        <li><a href="timetable.html">Timetable</a></li>
-        <li><a href="assignment.html">Assignment</a></li>
-        <li><a href="notice.html">Notice</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+<section class="hero">
 
-<hr>
+    <div class="hero-image">
+        <img src="images/charusat.png" alt="StudentHub Banner">
+    </div>
 
-<center>
-    <h2>Welcome to StudentHub</h2>
-</center>
+    <div class="hero-content">
 
-<img src="images/charusat.png"
-     alt="StudentHub Banner"
-     style="display:block;
-            margin:20px auto;
-            width:90%;
-            max-width:1200px;
-            height:auto;
-            border-radius:10px;">
+        <span class="hero-tag">
+            🎓 CHARUSAT Student Portal
+        </span>
 
-<section>
+        <h1>Welcome to StudentHub</h1>
+
+        <p>
+            StudentHub is your one-stop digital campus portal for attendance,
+            assignments, notices, timetables and academic activities.
+            Stay connected, organized and updated anytime through one secure platform.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="register.html" class="btn btn-dark">Get Started</a>
+            <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= UPCOMING EVENTS ================= -->
+<section class="container">
+    <div class="section-title">
+        <h2>Upcoming Events</h2>
+        <a href="events.html">View All →</a>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img src="images/event1.jpg" alt="Hackathon">
+            <h3>Hackathon 2026</h3>
+            <p>
+                Participate in a 24-hour coding competition and build innovative solutions.
+            </p>
+        </div>
+        <div class="card">
+            <img src="images/event2.jpg" alt="AI Workshop">
+            <h3>AI Workshop</h3>
+            <p>
+                Learn Artificial Intelligence, Machine Learning and Web Development.
+            </p>
+        </div>
+        <div class="card">
+            <img src="images/event3.jpg" alt="Career Fair">
+            <h3>Career Fair</h3>
+            <p>
+                Meet recruiters and explore placement and internship opportunities.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ================= FEATURES ================= -->
+<section class="features">
+    <h2>Why Choose StudentHub?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>📅 Timetable</h3>
+            <p>
+                Easily access your weekly lecture schedule.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3>📝 Assignments</h3>
+            <p>
+                Track assignments and submission deadlines.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 Attendance</h3>
+            <p>
+                View attendance records and academic progress.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3>📢 Notices</h3>
+            <p>
+                Stay updated with important college announcements.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ================= ABOUT ================= -->
+<section class="container">
     <h2>About StudentHub</h2>
-
     <p>
-        StudentHub is a comprehensive digital campus portal designed to simplify
-        academic management for students. It provides easy access to attendance,
-        assignments, timetables, notices, and profile information through a
-        single platform. StudentHub helps students stay organized, informed,
-        and connected throughout their academic journey.
+        StudentHub is a modern digital campus portal that helps students
+        manage attendance, assignments, timetables, notices,
+        events and academic information through one secure platform.
     </p>
 </section>
-
-<hr>
-
-<section>
-    <h2>Upcoming Workshop</h2>
-
-    <h3>Web Development Workshop 2026</h3>
-
-    <p>
-        Learn the fundamentals of HTML, CSS, JavaScript, and modern web
-        development techniques. The workshop includes hands-on sessions,
-        project demonstrations, and expert guidance from faculty members.
-    </p>
-
-    <p>
-        <strong>Date:</strong> 15 August 2026 <br>
-        <strong>Venue:</strong> CSPIT Seminar Hall <br>
-        <strong>Time:</strong> 10:00 AM - 1:00 PM
-    </p>
-</section>
-
-<hr>
-
-<section>
-    <h2>Quick Links</h2>
-
-    <ul>
-        <li><a href="#">Library Portal</a></li>
-        <li><a href="#">Examination Portal</a></li>
-        <li><a href="#">Academic Calendar</a></li>
-        <li><a href="#">Course Materials</a></li>
-        <li><a href="#">ERP login</a></li>
-    </ul>
-</section>
-
-<hr>
-
-<section>
+<!-- ================= LATEST NOTICES ================= -->
+<section class="container">
     <h2>Latest Notices</h2>
-
-    <ul>
-        <li>📢 Semester Examination Forms are now available. Last date to apply: 30 August 2026.</li>
-        <li>📚 Library will remain open from 8:00 AM to 8:00 PM during examination period.</li>
-        <li>💻 Registration for Web Development Workshop 2026 is now open.</li>
-        <li>🎓 Scholarship applications for eligible students are invited.</li>
-        <li>🏆 Annual Sports Week registrations begin from 1 September 2026.</li>
+    <ul class="notice-list">
+        <li>📢 Semester Examination Form submission has started.</li>
+        <li>💻 Registration for AI Workshop closes on 15 August.</li>
+        <li>🏆 Annual Sports Week registration is now open.</li>
+        <li>🎓 Scholarship applications are available for eligible students.</li>
     </ul>
 </section>
-
+<!-- ================= QUICK LINKS ================= -->
+<section class="container">
+    <h2>Quick Links</h2>
+    <div class="quick-links">
+        <a href="#">Library Portal</a>
+        <a href="#">ERP Portal</a>
+        <a href="#">Academic Calendar</a>
+        <a href="#">Course Materials</a>
+        <a href="#">Examination Portal</a>
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+    <h3>StudentHub</h3>
+    <p>Your Digital Campus Portal</p>
+    <p>&copy; 2026 StudentHub. All Rights Reserved.</p
 </footer>
-
 <script src="js/script.js"></script>
-
 </body>
 </html>
